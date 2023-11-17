@@ -1,9 +1,12 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
 
+import FirstLibrary
 
 public class SecondLibrary {
     func printNewNumber() {
-        print("[SecondLibrary][printNewNumber] 123433")
+        print("SecondLibrary calls First Library:")
+        FirstLibrary
+
     }
 }

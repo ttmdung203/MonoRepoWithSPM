@@ -2,11 +2,12 @@
 // https://docs.swift.org/swift-book
 
 public class FirstLibrary {
-    func printTest(text: String) {
+    public init() {}
+    public func printTest(text: String) {
         print("[FirstLibrary][printTest] Test \(text)")
     }
 
-    func printNumber(number: Int) {
+    public func printNumber(number: Int) {
         print("[FirstLibrary][printTest] Test \(number)")
     }
 }
