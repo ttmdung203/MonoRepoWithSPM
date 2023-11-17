@@ -18,8 +18,8 @@ let package = Package(
             name: "FirstLibrary"),
         .binaryTarget(
             name: "BinaryFirstLibrary",
-            url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.1/BinaryFirstLibrary.zip",
-            checksum: "2eee4326a625f02d57c828bf1a2244e98cd99d6dc762d95a1e539f600235032b"),
+            url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.3/BinaryFirstLibrary.zip",
+            checksum: "dedd6512bcaef72c9e8225fad214e046fead7a4383ca3cc394837eccc4a17a6c"),
         .testTarget(
             name: "FirstLibraryTests",
             dependencies: ["FirstLibrary"]),
