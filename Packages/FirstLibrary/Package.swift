@@ -15,10 +15,10 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(
+        .target(
             name: "FirstLibrary",
-            url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.4/FirstLibrary.zip",
-            checksum: "869c55c65e7b39417da6be31f0f1af5e9cd2c472ac5b7ed74518dac885053b23"),
+            sources: ["Sources"]
+        ),
         .testTarget(
             name: "FirstLibraryTests",
             dependencies: ["FirstLibrary"]),
