@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "SecondLibrary",
+    platforms: [.iOS(.v15)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -13,8 +14,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.5/FirstLibrary.zip",
-            from: "1.0.5"),
+            url: "https://github.com/ttmdung203/MonoRepoWithSPM/tree/main/Packages/FirstLibrary",
+            from: "1.0.6"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
