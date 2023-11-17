@@ -13,8 +13,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.0/FirstLibrary.zip",
-            exact: "1.0.0"),
+            url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.1/FirstLibrary.zip",
+            exact: "1.0.1"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

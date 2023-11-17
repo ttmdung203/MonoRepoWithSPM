@@ -16,9 +16,10 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "FirstLibrary"),
-        .binaryTarget(name: "FirstLibraryZip",
-                      url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.1/FirstLibrary.zip",
-                      checksum: "338201d3ac6ed0cfd15eb2522b109bc192937e330bd46b2292d00fa0bc4dff41"),
+        .binaryTarget(
+            name: "BinaryFirstLibrary",
+            url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.1/BinaryFirstLibrary.zip",
+            checksum: "2eee4326a625f02d57c828bf1a2244e98cd99d6dc762d95a1e539f600235032b"),
         .testTarget(
             name: "FirstLibraryTests",
             dependencies: ["FirstLibrary"]),
