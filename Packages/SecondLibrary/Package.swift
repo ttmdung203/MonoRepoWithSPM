@@ -14,18 +14,13 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/ttmdung203/MonoRepoWithSPM/tree/main/Packages/FirstLibrary",
-            from: "1.0.6"),
+            url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.7/FirstLibrary.zip",
+            from: "1.0.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "SecondLibrary",
             dependencies: ["FirstLibrary"]),
-//        .binaryTarget(name: "SecondLibraryZip",
-//                      url: "https://github.com/ttmdung203/MonoRepoWithSPM/releases/download/1.0.0/SecondLibrary.zip",
-//                      checksum: "cc06ab9aec237a94fde36122ff05f7e20b20dbb86e3b4d4be1327c34172717d7"),
         .testTarget(
             name: "SecondLibraryTests",
             dependencies: ["SecondLibrary"]),
